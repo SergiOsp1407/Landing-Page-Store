@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+  maximun-scale=1.0, minimun-scale=1.0">-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!--Link para traer los íconos desde un servidor-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Mi tienda</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+</head>
+<body>
+    <header class="main-header">
+      <div class="container container--flex">
+        <div class="main-header__container">
+          <h1 class="main-header__title">Libros Alejandría.com</h1>
+          <span class="icon-menu" id=btn-menu><i class="fas fa-chevron-circle-down"></i></span>
+          <!--Menu-->
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Sobre Nosotros</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Tienda</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Contáctanos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--
+        <div class="main-header__container">
+          <span class="main-header__txt">Need Help</span>
+          <p class="main-header__txt"><i class="fas fa-phone"></i>3197249663</p>
+        </div>-->
+        <div class="main-header__container">
+          <a href="login.html" class="main-header__link" ><img src="../img/register.png" alt="registro" class="register"></a>
+          <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+          <a href="#" class="main-header__btn">Buy <i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </header>
+    <main clas="main">
+
+      <!--Sección de Productos-->
+      <div class="container-body">
+          <div class="category_list">
+            <input type="radio" name="filtro" id="clasicos" checked>
+            <label for="clasicos" class="categoryItem">Clasicos</label>
+            <input type="radio" name="filtro"  id="universal">
+            <label for="universal" class="categoryItem">Universal</label>
+            <input type="radio" name="filtro" id="infantiles">
+            <label for="infantiles" class="categoryItem">Infantiles</label>
+            <input type="radio" name="filtro" id="terror" >
+            <label for="terror" class="categoryItem">Terror</label>
+            <input type="radio" name="filtro" id="romance">
+            <label for="romance" class="categoryItem">Romance</label>
+            <input type="radio" name="filtro"  id="todos">
+            <label for="todos" class="categoryItem">Todos</label>
+            <h2 class="main-title">Productos disponibles</h2>
+
+            <div class="container-products" id="imagenes">
+
+              <div class="cat_clasic">
+                <div class="product">
+                  <img src="../img/books/c1.jpg" alt="product1" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">El retrato de Dorian Grey</h3>
+                    <span class="product__price">$100000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_clasic">
+                <div class="product">
+                  <img src="../img/books/c2.jpg" alt="product1" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">Drácula</h3>
+                    <span class="product__price">$100000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_clasic">
+                <div class="product">
+                  <img src="../img/books/c3.jpg" alt="product1" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">Confesiones</h3>
+                    <span class="product__price">$250000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_clasic">
+                <div class="product">
+                  <img src="../img/books/c4.jpg" alt="product1" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">La Odisea</h3>
+                    <span class="product__price">$50000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+
+              <div class="cat_univ">
+                <div class="product">
+                  <img src="../img/books/u1.jpg" alt="product2" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">Ordesa</h3>
+                    <span class="product__price">$150000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_univ">
+                <div class="product">
+                  <img src="../img/books/u2.jpg" alt="product2" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">El amor en los tiempos del cólera</h3>
+                    <span class="product__price">$200000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_univ">
+                <div class="product">
+                  <img src="../img/books/u3.jpg" alt="product2" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">Moby Dick</h3>
+                    <span class="product__price">$90000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_univ">
+                <div class="product">
+                  <img src="../img/books/u4.jpg" alt="product2" class="product__img">
+                  <div class="product__description">
+                    <h3 class="product__title">Hamlet</h3>
+                    <span class="product__price">$145000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+
+              <div class="cat_inf">
+                <div class="product">
+                  <img src="../img/books/i1.jpg" alt="product2" class="product__img" category="Categ 3">
+                  <div class="product__description">
+                    <h3 class="product__title">El Principito</h3>
+                    <span class="product__price">$50000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_inf">
+                <div class="product">
+                  <img src="../img/books/i2.jpg" alt="product2" class="product__img" category="Categ 3">
+                  <div class="product__description">
+                    <h3 class="product__title">Érase (una y otra) vez</h3>
+                    <span class="product__price">$45000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_inf">
+                <div class="product">
+                  <img src="../img/books/i3.jpg" alt="product2" class="product__img" category="Categ 3">
+                  <div class="product__description">
+                    <h3 class="product__title">El Quijote</h3>
+                    <span class="product__price">$100000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_inf">
+                <div class="product">
+                  <img src="../img/books/i4.jpg" alt="product2" class="product__img" category="Categ 3">
+                  <div class="product__description">
+                    <h3 class="product__title">El libro de la selva</h3>
+                    <span class="product__price">$85000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+
+              <div class="cat_terr">
+                <div class="product">
+                  <img src="../img/books/t1.jpg" alt="" class="product__img" category="Categ 4">
+                  <div class="product__description">
+                    <h3 class="product__title">Frankenstein</h3>
+                    <span class="product__price">$95000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_terr">
+                <div class="product">
+                  <img src="../img/books/t2.jpg" alt="" class="product__img" category="Categ 4">
+                  <div class="product__description">
+                    <h3 class="product__title">El Resplandor</h3>
+                    <span class="product__price">$100000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_terr">
+                <div class="product">
+                  <img src="../img/books/t3.jpg" alt="" class="product__img" category="Categ 4">
+                  <div class="product__description">
+                    <h3 class="product__title">Demonio de Libro</h3>
+                    <span class="product__price">$50000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_terr">
+                <div class="product">
+                  <img src="../img/books/t4.jpg" alt="" class="product__img" category="Categ 4">
+                  <div class="product__description">
+                    <h3 class="product__title">Cuentos de lo profundo del bosque</h3>
+                    <span class="product__price">$150000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+
+              <div class="cat_rom">
+                <div class="product">
+                  <img src="../img/books/r1.jpg" alt="" class="product__img" category="Categ 5">
+                  <div class="product__description">
+                    <h3 class="product__title">Bajo la misma estrella</h3>
+                    <span class="product__price">$120000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_rom">
+                <div class="product">
+                  <img src="../img/books/r2.jpg" alt="" class="product__img" category="Categ 5">
+                  <div class="product__description">
+                    <h3 class="product__title">Grandes cartas de amor</h3>
+                    <span class="product__price">$120000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_rom">
+                <div class="product">
+                  <img src="../img/books/r3.jpg" alt="" class="product__img" category="Categ 5">
+                  <div class="product__description">
+                    <h3 class="product__title">La Ultima cancion</h3>
+                    <span class="product__price">$180000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+	      <div class="cat_rom">
+                <div class="product">
+                  <img src="../img/books/r4.jpg" alt="" class="product__img" category="Categ 5">
+                  <div class="product__description">
+                    <h3 class="product__title">El largo camino a casa</h3>
+                    <span class="product__price">$100000</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>
+
+              <!--<div class="cat_todos">
+                <div class="product">
+                  <img src="../img/html_avanzado/3.jpg" alt="" class="product__img" category="Categ 6">
+                  <div class="product__description">
+                    <h3 class="product__title">Producto 6</h3>
+                    <span class="product__price">$600</span>
+                  </div>
+                  <button class="product__icon fas fa-cart-arrow-down"></button>
+                </div>
+              </div>-->
+
+            </div>
+          </div>
+      </div>
+    </main>
+
+
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">Su compra:</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6></h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate"></h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6></h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span></span>
+                                <strong class="mr-auto ml-1 text-secondary"></strong>
+                                <!--<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close"></i>
+                                    <span aria-hidden="true">&times;</span>-->
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">                                
+
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                                <!--<span aria-hidden="true">&times;</span>-->
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
+        </div>
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+
+    <footer class="main-footer">
+      <div class="footer__section">
+        <h2 class="footer__title">Sobre Nosotros</h2>
+        <p class="footer__txt">"Sobre Nosotros"</p>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitch"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fab fa-instagram-square"></i>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Direccion</h2>
+        <p class="footer__txt">Calle 74 # 68 - 59</p>
+        <h2 class="footer__title">Contacto</h2>
+        <p class="footer__txt">319 7249634</p>
+        <p class="footer__txt">alejandria@gmail.com</p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Links Directos</h2>
+        <a href="#" class="footer__link">Inicio</a>
+        <a href="#" class="footer__link">Sobre Nosotros</a>
+        <a href="#" class="footer__link">Error</a>
+        <a href="#" class="footer__link">Tienda</a>
+        <a href="#" class="footer__link">Contactanos</a>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Suscribete</h2>
+        <p class="footer__txt">Suscribete! <br>Te avisaremos cuando <br>tengamos descuentos</p>
+        <input type="email" name="" value="" class="footer__input" placeholder="Ingresa tu email">
+      </div>
+      <p class="copy">&copy 2021. Derechos Reservados | Diseñado por Harbey Leal - Sergio Ospina</p>
+    </footer>
+
+
+    <!-- Vincular código JS-->
+    <!--Menu-->
+    <script type="text/javascript" src="../js/menu.js"></script>
+    <!--Cart-->
+    <script type="text/javascript" src="../js/cart.js"></script>
+
+
+</body>
+</html>

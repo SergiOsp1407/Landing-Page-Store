@@ -1,0 +1,62 @@
+/*Fuentes*/
+@font-face {
+  font-family: "Odibee Sans";
+  src: url(../fonts/OdibeeSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Questrial";
+  src: url(../fonts/Questrial-Regular.ttf);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+
+.header{
+  width: 100%;
+  text-align: center;
+}
+h1{
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 30px;
+  width: 90%;
+  background-color: #2B2D42;
+  color: #EDF2F4;
+  border-radius: 10px;
+
+}
+
+.section{
+  text-align: center;
+}
+
+h5{
+  text-align: center;
+
+}
+a{
+  text-decoration: none;
+  color: #EF233C;
+}
+
+
+
+.footer{
+  text-align: center;
+
+}

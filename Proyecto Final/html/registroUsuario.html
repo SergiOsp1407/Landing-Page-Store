@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRO</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/stylesRegister.css">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+	<div class="cabecera">
+		<header>
+			<h1>Formulario de Registro</h1>
+		</header>
+	</div>
+
+	<div class="section">
+		<section>
+			<div class="subtitulo">
+				<h3>Ingrese Datos</h3>
+			</div>
+			<div class="formulario">
+				<form>
+					<div class="nombre">
+					<label>Nombres: </label>
+					<input type="text" name="nombre" placeholder="Nombres" placeholder="Nombres" maxlength="20">
+					</div>
+					<br>
+					<div class="Apellido">
+					<label>Apellidos: </label>
+					<input type="text" name="Apellido" placeholder="Apellido" pattern="Apellido" maxlength="30">
+					</div>
+					<br>
+					<div class="Usuario">
+					<label>Nombre Usuario: </label>
+					<input type="text" name="Usuario"  minlength="5" maxlength="15">
+					</div>
+					<br>
+					<div class="Contraseña">
+					<label>Contraseña: </label>
+					<input type="password" name="Contraseña" placeholder="*******" pattern="*******" minlength="8" maxlength="20"><br>
+					<br>
+					<label>Confirmar contraseña: </label>
+					<input type="password" name="ConfirmarContraseña" placeholder="*******" pattern="*******" minlength="8" maxlength="20">
+					</div>
+					<br>
+					<div class="Documento">
+					<label>Tipo de documento</label>
+					<input list="Tipo de documento" name="Tipo de documento" placeholder="Tipo de documento" pattern="Tipo de documento" >
+					<datalist id="Tipo de documento">
+						<option value="Cedula Ciudadania"></option>
+						<option value="Cedula Extrangera"></option>
+						<option value="Pasaporte"></option>
+						<option value="visa"></option>
+					</datalist>
+					<input type="text" name="NumeroIdentificacion" placeholder="Numero Idenificacion" pattern="Numero Idenificacion">
+					</div>
+					<br>
+					<div class="Genero">
+					<label>Sexo:</label>
+					<input list="Sexo" name="Sexo" placeholder="Genero" pattern="Genero">
+					<datalist id="Sexo">
+						<option value="Femenino"></option>
+						<option value="Masculino"></option>
+						<option value="Otro"></option>
+					</datalist>
+					</div>
+					<br>
+					<div class="Telefono">
+					<label>Telefono:</label>
+					<input type="tel" name="CodigoPais" id="CodigoPais" value="+57" readonly="" >
+					<input type="tel" name="Telefono" id="Telefono" minlength="7" maxlength="10" min="0">
+					</div>
+					<br>
+					<div class="Ciudad">
+					<label>Ciudad</label>
+					<input list="Ciudad" name="Ciudad" placeholder="Ciudad" pattern="Ciudad">
+					<datalist id="Ciudad">
+						<option value="Bogota D.C"></option>
+						<option value="Medellin"></option>
+						<option value="Cali"></option>
+						<option value="Cartagena"></option>
+						<option value="Barranquilla"></option>
+						<option value="otro"></option>
+					</datalist>
+
+					</div>
+					<br>
+					<div class="Direccion">
+					<label>Dirección:</label>
+					<input type="text" name="Direccion" id="Direccion" minlength="" maxlength="20">
+					</div>
+					<br>
+					<div class="Correo">
+						<label>Correo: </label>
+						<input type="text" name="Correo" maxlength="40" placeholder="xxxx@uniagustiniana.edu.co" pattern="xxxx@uniagustiniana.edu.co" >
+					</div>
+					<br>
+					<div class="boton">
+						<button type="submit" formaction="login.html" id="Volver">Volver</button>						
+						<a href="index.html" class="main-header__link">
+							<input type="button" name="Registrar" value="Registrarse" id="Registrar" onclick="Confirmacion()">
+						</a>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+<br>
+	<div class="footer">
+		<footer>
+			<label> &copy; Introduccion al desarrollo web </label>
+			<label>Universidad Uniagustiniana</label>
+			<label>Proyecto Final</label>
+		</footer>
+	</div>
+	
+	<script type="text/javascript">
+		function Confirmacion(){
+			alert("Para terminar el registro confirme la recepción del correo.");
+		}
+	</script>
+</body>
+</html>
